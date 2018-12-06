@@ -7,14 +7,6 @@ variable "aws_secret_access_key" {
   description = "AWS secret access key"
 }
 
-variable "ecs_cluster" {
-  description = "ECS cluster name"
-}
-
-variable "ecs_key_pair_name" {
-  description = "EC2 instance key pair name"
-}
-
 variable "region" {
   description = "AWS region"
 }
@@ -26,22 +18,6 @@ variable "availability_zone" {
   }
 }
 
-########################### Test VPC Config ################################
-
-variable "test_vpc" {
-  description = "VPC name for Test environment"
-}
-
-########################### Autoscale Config ################################
-
-variable "max_instance_size" {
-  description = "Maximum number of instances in the cluster"
-}
-
-variable "min_instance_size" {
-  description = "Minimum number of instances in the cluster"
-}
-
-variable "desired_capacity" {
-  description = "Desired number of instances in the cluster"
+variable "key_name" {
+  description = "AWS Key name to connect to ec2 instance"
 }
