@@ -1,0 +1,6 @@
+ecs_cluster="K8s-ECSClusterWP"
+region = "us-east-2"
+test_vpc = "vpc-068ed026aac28906b"
+max_instance_size = "5"
+min_instance_size = "2"
+desired_capacity = "2"
